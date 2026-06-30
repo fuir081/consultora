@@ -1,0 +1,106 @@
+/** Estilos página de login */
+
+
+
+/* font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.contenedor img {
+    width: 300px;
+    margin-top: 30px;
+}
+
+.contenedor h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    color: rgb(68, 68, 68);
+    margin-top: -50px;
+}
+
+.contenedor p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.contenedor form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.contenedor form label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #323232;
+}
+
+.contenedor form input {
+    padding: 15px 10px 7px;
+    border: solid 1px #afafaf;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    width: 320px;
+}
+
+.contenedor form button {
+    border-radius: 20px;
+    background-color: #feb828;
+    display: block;
+    margin-top: 30px;
+    color: #323232;
+    padding: 15px 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    color: #323232;
+}
+
+.volver {
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #323232;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+
+.msj {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: #feb828;
+    bottom: -340px;
+    box-shadow: 2px 20px 18px 14px #494949;
+    font-family: 'Raleway', sans-serif;
+    transition: all ease .3s;
+}
+
+.efectoMsj {
+    bottom: -40px;
+}

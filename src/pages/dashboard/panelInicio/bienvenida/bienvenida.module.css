@@ -1,0 +1,55 @@
+/** Estilos página */
+
+
+
+/* font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+
+
+
+.bienvenida {
+    width: 99%;
+    padding: 70px 5% 20px 5%;
+    background-color: rgb(248, 248, 248);
+}
+
+.bienvenida h1 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+.bienvenida h1 span {
+    color: #ffad02;
+}
+
+.bienvenida p {
+    margin: 2px 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+
+    color: #666;
+}
+
+.bienvenida img {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.bienvenida>span {
+    font-family: 'Raleway', sans-serif;
+    font-size: .8rem;
+
+    color: #999;
+
+    text-transform: capitalize;
+    display: flex;
+}

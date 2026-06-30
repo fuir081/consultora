@@ -1,0 +1,223 @@
+/** Estilos header */
+
+
+
+/* font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+
+
+.header {
+    width: 94%;
+    padding: 20px 3%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.header>img {
+    width: 50px;
+    margin-left: 330px;
+}
+
+.menuContainer {
+    position: relative;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+    width: 40px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Transformación a X */
+.open span:nth-child(1) {
+    transform: translateY(8px) rotate(40deg);
+}
+
+.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.open span:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+}
+
+/* Menú desplegable */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 280px;
+    height: 100vh;
+
+    background: white;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+
+    z-index: 1000;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.menu a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #f5f5f5;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    z-index: 999;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    border-radius: 50px;
+    border: solid 1px rgb(160, 160, 160);
+    padding: 3px 10px 3px 20px;
+}
+
+.search button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-color: rgb(234, 234, 234);
+    padding: 7.5px;
+    margin: 0px -11px;
+    border-radius: 0 50px 50px 0;
+    border: solid 1px rgb(160, 160, 160);
+}
+
+.search button img {
+    width: 15px;
+}
+
+.notificacion {
+    width: 24px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.num {
+    position: absolute;
+    background-color: #c7289a;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: #eee;
+    font-size: 0.7rem;
+    top: -3px;
+    right: -3px;
+}
+
+.usuario div {
+    display: flex;
+}
+
+.usuario div img {
+    width: 25px;
+    margin: 0 10px
+}
+
+.notificacion,
+.usuario {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 260px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.dropdown li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+}
+
+.dropdown li h2 {
+    color: #333;
+    font-size: 1rem;
+}
+
+.dropdown li h3 {
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.dropdown li span {
+    color: #333;
+    font-size: 0.75rem;
+}
+
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown li:hover {
+    background: #f5f5f5;
+}
